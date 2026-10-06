@@ -18,8 +18,8 @@ push: null
 # pull section allows you to provide instructions for cloning
 # this project in remote locations
 pull:
-- prefect.deployments.steps.set_working_directory:
-    directory: D:\Projects\SSC - Data Center\prefect-learn
+  - prefect.deployments.steps.git_clone:
+      repository: https://github.com/divyeshs-wst/prefect-learn.git
 
 # the deployments section allows you to provide configuration
 # for deploying flows
